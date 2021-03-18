@@ -418,7 +418,11 @@ abstract class SolrConnectorPluginBase extends ConfigurablePluginBase implements
    * {@inheritdoc}
    */
   public function getSchemaVersion($reset = FALSE) {
-    $parts = explode('-', $this->getSchemaVersionString($reset));
+    $schema_version = $this->getSchemaVersionString($reset);
+    $parts = explode('-', $schema_version);
+    if (!isset($parts[1]))
+      throw new \Exception("Invalid Schema Version string: $schema_version.");
+
     return $parts[1];
   }
 
