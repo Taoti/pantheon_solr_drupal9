@@ -1,3 +1,7 @@
+# DEPRECATED: DO NOT USE!
+Use https://www.drupal.org/project/search_api_pantheon/releases/3.0.0 instead.
+With the release of Search API Pantheon 3.0.0 that is definitely the choice you want to go with.
+
 # Search API SOLR for Pantheon on Drupal 9
 
 This project provides a Drupal 9 compatible pairing of modified search_ap_solr
